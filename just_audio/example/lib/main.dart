@@ -45,7 +45,7 @@ class MyAppState extends State<MyApp> with WidgetsBindingObserver {
     try {
       // AAC example: https://dl.espressif.com/dl/audio/ff-16b-2c-44100hz.aac
       await _player.setAudioSource(AudioSource.uri(Uri.parse(
-          "https://iwwhjxplzmgcmpmhpqt.supabase.co/storage/v1/object/public/email/instrumental.m4a?t=2022-11-23T01%3A09%3A41.568Z")));
+          "https://iwwhjxplzmgcmpmhpqt.supabase.co/storage/v1/object/public/email/instrumental.m4a")));
     } catch (e) {
       print("Error loading audio source: $e");
     }
